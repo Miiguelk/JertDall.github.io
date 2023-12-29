@@ -1,0 +1,44 @@
+/* Ocultar la navbar inicialmente */
+#main-navbar {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Mostrar la navbar cuando tiene la clase 'visible' */
+#main-navbar.visible {
+    opacity: 1;
+}
+
+/* Estilos para la sección de introducción */
+#introduccion {
+    padding: 50px 0; /* Ajusta el espacio interno según sea necesario */
+    background-color: #f8f9fa;
+    background-image: url('../img/introduccion/esquina.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 30%;
+     /* Cambia el color de fondo según tus preferencias */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40; /* Cambia el color del título según tus preferencias */
+}
+
+.section-subtitle {
+    font-size: 1.5rem;
+    color: #6c757d; /* Cambia el color del subtítulo según tus preferencias */
+}
+
+.section-content {
+    font-size: 1.1rem;
+    color: #495057; /* Cambia el color del contenido según tus preferencias */
+}
+
+
+.spacer {
+    height: 50px; /* Ajusta la altura del espacio según sea necesario */
+}
+
+

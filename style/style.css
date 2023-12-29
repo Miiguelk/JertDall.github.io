@@ -1,0 +1,196 @@
+body{
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+}
+
+.video-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-bg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: scaleVideo 10s infinite alternate; /* Animación de escala */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Animación de escala */
+@keyframes scaleVideo {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.05);
+  }
+}
+
+/* Estilos para el contenido centrado */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  animation: fadeIn 2s forwards; /* Animación de aparición */
+}
+
+.logo-and-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 2s 0.5s forwards; /* Animación de aparición con retraso */
+}
+
+/* Otros estilos personalizados */
+
+/* Animación de aparición */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+/* Agrega aquí tus estilos personalizados */
+
+/* Clase para animar elementos al hacer scroll */
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Efecto de aparición al hacer scroll */
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.fadeInUp.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilos adicionales para la sección de introducción */
+#introduccion {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+  background-image: url('../img/introduccion/esquina.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+.section-content {
+  font-size: 1.1rem;
+  color: #495057;
+}
+
+/* Estilos y animaciones de Animate.css */
+.animated {
+  animation-duration: 1s;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.animate__fadeInDown {
+  animation-name: fadeInDown;
+}
+.spacer {
+  height: 70px; /* Ajusta la altura del espacio según sea necesario */
+}
+
+ /* Estilos para la barra de navegación */
+ .navbar {
+  background: linear-gradient(45deg, #f8ce12, #ffff10); /* Degradado de naranja a amarillo */
+  transition: background 0.3s ease;
+}
+
+
+.navbar.fixed-top {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar i {
+  font-size: 20px;
+  color: #ac3f01; /* Blanco */
+  margin-right: 10px;
+}
+
+.navbar i:hover {
+  color: #ff5e00; /* Rojo alizarina */
+}
+.navbar.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Estilos adicionales para el mensaje de texto */
+.text-xl {
+  color: #fff; /* Color del texto blanco */
+}
+
+.text-3xl {
+  color: #f8d74a; /* Color de resalte amarillo */
+}
+
+/* Estilos adicionales para el texto de "JertDall" con efecto de brillo */
+.neon-text {
+  display: inline-block;
+  font-size: 3em; /* Tamaño del texto */
+  font-weight: bold;
+  color: #fff; /* Color del texto blanco */
+  text-shadow: 0 0 10px #f8d74a, 0 0 20px #f8d74a, 0 0 30px #f8d74a; /* Efecto de brillo */
+}
+/* Estilos adicionales para el subtítulo */
+.text-4xl {
+  color: #f8d74a; /* Color de resalte amarillo */
+}
+
+/* Estilos adicionales para la descripción */
+.text-xl {
+  color: #fff; /* Color del texto blanco */
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}

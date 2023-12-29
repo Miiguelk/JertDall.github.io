@@ -1,0 +1,21 @@
+/* Estilos específicos para el nuevo carrusel */
+.design-slider-container {
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.design-slick-slider {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.design-slick-slider div {
+    font-size: 48px; /* Tamaño de los iconos */
+    margin: 0 10px; /* Espacio entre los iconos */
+}
+
+/* Otros estilos específicos si es necesario */

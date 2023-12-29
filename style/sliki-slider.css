@@ -1,0 +1,31 @@
+.slider-container {
+    width: 60%; /* Ajusta según tus necesidades */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.slick-slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slick-slider img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slider-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+@media screen and (max-width: 768px) {
+    .slider-container {
+        width: 100%;
+    }
+    
+}

@@ -1,0 +1,37 @@
+#servicios {
+    background-color: #ffffff; /* Gris claro */
+    padding: 50px 0;
+    color: #0a0b0b; /* Azul oscuro */
+}
+
+.servicio-item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.servicio-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #354b59; /* Azul suave */
+    transition: color 0.3s ease;
+}
+
+.servicio-titulo {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-family: 'Pacifico', cursive; /* Fuente Pacifico */
+}
+
+.servicio-descripcion {
+    font-size: 1.2rem;
+}
+
+/* Cambio de color al pasar el mouse */
+.servicio-item:hover .servicio-icon {
+    color: #d5f30e; /* Rojo alizarina */
+}
+
+.servicio-item:hover .servicio-titulo,
+.servicio-item:hover .servicio-descripcion {
+    color: #000000; /* Rojo alizarina */
+}

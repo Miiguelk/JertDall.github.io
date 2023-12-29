@@ -1,0 +1,106 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    font-size: 32px;
+    color: #343a40; /* Color de texto oscuro */
+    /* Additional Style */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.category-card {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    /* Additional Style */
+    position: relative;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 2px solid #dee2e6; /* Línea divisoria debajo de la imagen */
+    /* Additional Style */
+    transition: border-bottom 0.3s ease;
+}
+
+.category-card:hover .category-image {
+    border-bottom: 2px solid #efef66; /* Change color on hover */
+}
+
+.category-title {
+    text-align: center;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #343a40; /* Color de texto oscuro */
+    background: linear-gradient(45deg, #FFA500, #FFFF00); /* Color de fondo azul */
+    margin-bottom: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* Additional Style */
+    margin-top: -10px; /* Adjust spacing */
+}
+
+.category-description,
+.category-description-full {
+    padding: 15px;
+    text-align: center;
+    color: #6c757d; /* Color de texto gris oscuro */
+    /* Additional Style */
+    line-height: 1.5;
+}
+
+.category-icon {
+    font-size: 36px;
+    color: #fff; /* Color del ícono blanco */
+    transition: transform 0.3s ease;
+    /* Additional Style */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.category-card:hover .category-icon {
+    transform: scale(1.2);
+}
+
+/* Animación de zoom en ícono de categoría */
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.category-icon {
+    animation: zoomIn 0.3s ease;
+}
+
+.category-description-full {
+    display: none;
+    /* Additional Style */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.category-description-full.expanded {
+    display: block;
+    opacity: 1;
+}
+#colorin:hover{
+    color: #e6b932;
+}

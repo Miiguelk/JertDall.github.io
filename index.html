@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JertDall</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style/carrusel.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="style/servicios.css">
+    <link rel="stylesheet" href="style/boton-flotante.css">
+    <link rel="stylesheet" href="style/productos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style/sliki-slider.css">
+    <link rel="stylesheet" href="style/sliki-slider-dos.css">
+    <link rel="stylesheet" href="style/parallax.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+    <link rel="shortcut icon" href="img/logo/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+</head>     
+</head>
+<body>
+
+    <!-- Video de Fondo y Contenido -->
+    <div class="video-container relative">
+        <video autoplay loop muted class="video-bg">
+            <source src="video/fondo-inicio.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+        <div class="content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+            <div class="container">
+                <div class="logo-and-name mb-8">
+                    <div class="neon-text text-7xl font-extrabold mb-4 font-serif">
+                        <span class="jert text-yellow-500">J</span>
+                        <span class="e text-pink-500">e</span>
+                        <span class="r text-yellow-300">r</span>
+                        <span class="t text-pink-500">t</span>
+                        <span class="dall text-yellow-500">D</span>
+                        <span class="a text-pink-300">a</span>
+                        <span class="l text-yellow-500">l</span>
+                        <span class="l text-pink-500">l</span>
+                    </div>
+                    <img src="img/logo/favicon.ico" alt="Logo" class="logo w-40 mx-auto">
+                </div>
+                <p class="text-5xl text-white font-bold mb-4 animate__animated animate__fadeIn animate__delay-1s">
+                    DISEÑO <br> PARA TODOS
+                </p>
+                <p class="text-xl text-white mb-8 animate__animated animate__fadeIn animate__delay-2s">
+                    Explora una amplia gama de diseños para tazas, camisetas, relojes y más.
+                </p>
+                <a href="#productos" class="btn btn-warning animate__animated animate__fadeIn animate__delay-3s">Explora Nuestros Servicios</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+
+       <!-- Navbar fija debajo del video -->
+     <!-- Barra de navegación -->
+     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!-- Logotipo en el centro -->
+            <a class="navbar-brand" href="#">
+                <img src="img/logo/LOGO-JERTDALL-PNG-140x52.png" alt="Logo" class="logo-navbar">
+            </a>
+
+            <!-- Botón hamburguesa para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Elementos de la barra de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Enlaces a la derecha -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio" style="color: #8B0000;">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos" style="color: #8B0000;">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#web-design" style="color: #8B0000;">Contáctanos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros" style="color: #8B0000;">Nosotros</a></li>
+                    
+                </ul>
+                <!-- Íconos sociales a la izquierda -->
+                <div class="social-icons">
+                    <a target="_blank" href="https://www.facebook.com/jertdallcruz" class="navbar-text"><i class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://twitter.com/jertdall2023" class="navbar-text"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/jertdall/" class="navbar-text"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://www.tiktok.com/@jertdall" class="navbar-text"><i class="fab fa-tiktok"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/@jertdall/videos" class="navbar-text"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Sección de Introducción -->
+ <section id="inicio" id="introduccion" class="container">
+  <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+          <h2 class="section-title"><span id="colorin">Bienvenido a Nuestro Mundo Creativo</span></h2>
+          <p class="section-subtitle">Descubre la magia detrás de cada diseño</p>
+          <p class="section-content">
+              En nuestro estudio, nos dedicamos a crear experiencias visuales impactantes.
+              Nuestro equipo de diseñadores está comprometido con la excelencia y la innovación.
+              Explora nuestra galería de proyectos y descubre cómo podemos llevar tu visión al siguiente nivel.
+          </p>
+      </div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<section>
+    <div class="slider-container design-slider-container">
+        <div class="slider-title">Programas de Diseño y Edición</div>
+        <div class="slick-slider design-slick-slider">
+            <div><i class="fas fa-pencil-alt"></i></div>
+            <div><i class="fas fa-paint-brush"></i></div>
+            <div><i class="fas fa-object-ungroup"></i></div>
+            <div><i class="fas fa-video"></i></div>
+            <div><i class="fas fa-music"></i></div>
+            <div><i class="fas fa-film"></i></div>
+            <div><i class="fas fa-vector-square"></i></div>
+            <div><i class="fas fa-font"></i></div>
+            <div><i class="fas fa-image"></i></div>
+            <div><i class="fas fa-columns"></i></div>
+            <div><i class="fas fa-highlighter"></i></div>
+            <div><i class="fas fa-clone"></i></div>
+            <div><i class="fas fa-palette"></i></div>
+            <div><i class="fas fa-expand"></i></div>
+            <!-- Agrega más iconos aquí -->
+        </div>
+    </div>
+    
+</section>
+<br>
+<br>
+<br>
+ <!-- Sección de Catálogo-->
+ <section id="catalogo" class="container">
+    <h2 class="section-title text-center mb-4 animate__animated animate__fadeIn"><span id="colorin">¡Explora Nuestro Increíble Catálogo!</span></h2>
+    <br>
+    <br>
+    <div class="row">
+        <!-- Primer Producto con Fondo Blanco -->
+        <div class="col-md-4 animate__animated animate__fadeInLeft" data-aos="fade-left">
+            <div class="catalog-item white-bg">
+                <img src="img/galeria/3.jpg" class="img-fluid" alt="Producto 1" loading="lazy">
+                <div class="description">
+                    <h4>Producto 1</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Segundo Producto con Fondo Negro -->
+        <div class="col-md-4 animate__animated animate__fadeInUp" data-aos="fade-up">
+            <div class="catalog-item black-bg">
+                <img src="img/galeria/1.jpg" class="img-fluid" alt="Producto 2" loading="lazy">
+                <div class="description">
+                    <h4>Producto 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tercer Producto con Fondo Blanco -->
+        <div class="col-md-4 animate__animated animate__fadeInRight" data-aos="fade-right">
+            <div class="catalog-item white-bg">
+                <img src="img/galeria/2.png" class="img-fluid" alt="Producto 3" loading="lazy">
+                <div class="description">
+                    <h4>Producto 3</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <br>
+    <br>
+    <br>
+     
+    <br>
+    <section>
+        <div class="parallax-container" class="lazyload">
+            <div class="parallax"></div>
+            <div class="content-parallax">
+              <h2>PROMOCIONES-OFERTAS</h2>
+              <p>JERTDALL - ARTÍCULOS PERSONALIZADOS, PUBLICITARIOS Y PROMOCIONALES</p>
+              <p>HAZ TU PEDIDO, OFERTAS ESPECIALES!</p>
+            </div>
+          </div>
+    </section>
+    <br>
+    <br>
+    <br>
+     <!-- Sección de Carrusel Personalizado -->
+  <section id="slider" class="container">
+    <h2 class="section-title text-center mb-4"><span id="titulo-carrusel">!Descubre Nuestros mejores productos¡</span></h2>
+
+    <!-- Primer Slide -->
+    <div class="slide-container">
+        <div class="slide-img">
+            <img src="img/Slider/4-carr.webp" alt="Slide 1" loading="lazy">
+        </div>
+        <div class="slide-content">
+            <h3 style="color: #bdd600;">Título del Slide 1</h3>
+            <p style="color: #ff9d00;">Texto descriptivo del primer slide. ¡Añade mucho color y creatividad!</p>
+        </div>
+    </div>
+
+    <!-- Segundo Slide -->
+    <div class="slide-container">
+        <div class="slide-img">
+            <img src="img/Slider/1-carr.jpg" alt="Slide 2" loading="lazy">
+        </div>
+        <div class="slide-content">
+            <h3 style="color: #c5e622;">Título del Slide 2</h3>
+            <p style="color: #3498db;">Otra descripción colorida para el segundo slide. ¡Deja volar tu imaginación!</p>
+        </div>
+    </div>
+
+    <!-- Tercer Slide -->
+    <div class="slide-container">
+        <div class="slide-img">
+            <img src="img/Slider/2-carr.png" alt="Slide 3" loading="lazy">
+        </div>
+        <div class="slide-content">
+            <h3 style="color: #c7e906;">Título del Slide 3</h3>
+            <p style="color: #1a3857;">Texto creativo para el tercer slide. ¡Explora nuevas paletas de colores!</p>
+        </div>
+    </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section>
+        <div class="slider-container">
+            <div class="slider-title"></div>
+            <div class="slick-slider">
+                <div>
+                    <img src="img/slike-carru-uno/1-1.png" alt="Empresa 1">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/2-1.png" alt="Empresa 2">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/3-1.png" alt="Empresa 3">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/4-1.png" alt="Empresa 4">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/5-1.png" alt="Empresa 5">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/6.png" alt="Empresa 6">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/7.png" alt="Empresa 7">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/8.png" alt="Empresa 8">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/9.png" alt="Empresa 9">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/10.png" alt="Empresa 10">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/11.png" alt="Empresa 11">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/12.png" alt="Empresa 12">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/13.png" alt="Empresa 13">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/14.png" alt="Empresa 14">
+                </div>
+                <div>
+                    <img src="img/slike-carru-uno/15.png" alt="Empresa 15">
+                </div>
+            </div>
+        </div>  
+    </section>
+    <br>
+       <!-- Sección de Productos -->
+       <div id="productos" class="productos bg-gray-100 py-16">
+        <h2 class="section-title text-4xl font-bold text-center mb-10">
+            <span id="colorin" class="text-gradient bg-gradient-to-r from-yellow-500 via-red-500 to-yellow-500 rounded-full p-2">
+                Nuestros Servicios
+            </span>
+        </h2>
+    
+
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <!-- Camisetas -->
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/camisetas.jpeg" alt="Camisetas" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Camisetas</div>
+            <p class="category-description text-gray-600 mb-4">Descubre nuestra colección de camisetas personalizadas para todas las ocasiones. ¡Viste con estilo!</p>
+        </div>
+        <!-- Buzos -->
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/buzos.webp" alt="buzos" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Buzos</div>
+            <p class="category-description text-gray-600 mb-4"> Mantente abrigado con nuestros buzos personalizados y únicos. ¡Perfectos para cualquier temporada!</p>
+        </div>
+        <!--  Gorras -->
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/gorras.jpg" alt="gorras" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2"> Gorras</div>
+            <p class="category-description text-gray-600 mb-4"> Protege tu cabeza del sol con estilo. Descubre nuestras gorras personalizadas y elige tu diseño favorito.</p>
+        </div>
+        <!-- Cuadros-->
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/cuadros.jpg" alt="cuadros" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Cuadros</div>
+            <p class="category-description text-gray-600 mb-4">Decora tus espacios con nuestros cuadros personalizados. ¡Hazlos únicos y dale vida a tus paredes!</p>
+        </div>
+        <!-- Camisetas -->
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/camiseta 2.png" alt="Camisetas" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Camisetas</div>
+            <p class="category-description text-gray-600 mb-4">Descubre nuestra colección de camisetas personalizadas para todas las ocasiones. ¡Viste con estilo!</p>
+        </div>
+        <!-- Chaquetas  -->
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/chaquetas.jpg" alt="chaquetas" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Chaquetas </div>
+            <p class="category-description text-gray-600 mb-4">Añade estilo a tu guardarropa con nuestras chaquetas personalizadas. ¡Siéntete único y a la moda!
+            </p>
+        </div>
+        <!-- Cuadernos  -->
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/cuaderno.jpg" alt="cuadernos" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Cuadernos</div>
+            <p class="category-description text-gray-600 mb-4">Tomar notas nunca fue tan divertido. Descubre nuestros cuadernos personalizados con estilo.</p>
+        </div>
+        <!-- Camisetas -->
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/agenda.jpeg" alt="agendas" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Agendas</div>
+            <p class="category-description text-gray-600 mb-4">Organiza tu vida con nuestras agendas personalizadas. ¡Planifica con estilo!</p>
+        </div>
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/agenda.jpeg" alt="agendas" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Agendas</div>
+            <p class="category-description text-gray-600 mb-4">Organiza tu vida con nuestras agendas personalizadas. ¡Planifica con estilo!</p>
+        </div>
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/agenda.jpeg" alt="agendas" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Agendas</div>
+            <p class="category-description text-gray-600 mb-4">Organiza tu vida con nuestras agendas personalizadas. ¡Planifica con estilo!</p>
+        </div>
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/agenda.jpeg" alt="agendas" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Agendas</div>
+            <p class="category-description text-gray-600 mb-4">Organiza tu vida con nuestras agendas personalizadas. ¡Planifica con estilo!</p>
+        </div>
+        <div class="category-card bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105">
+            <img src="img/productos/agenda.jpeg" alt="agendas" class="category-image mb-4 rounded-md" loading="lazy">
+            <div class="category-title text-xl font-semibold mb-2">Agendas</div>
+            <p class="category-description text-gray-600 mb-4">Organiza tu vida con nuestras agendas personalizadas. ¡Planifica con estilo!</p>
+        </div>
+
+       
+    </div>
+    <div class="text-center mt-12" data-aos="fade-up">
+        <p class="text-lg font-bold text-yellow-500 animate__animated animate__fadeIn animate__delay-1s" font-family="belleza">
+            Descubre estos y más productos, chatea con nosotros y sé parte de los nuevos diseños.
+        </p>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<section id="web-design" class="py-16 bg-gradient-to-r from-yellow-300 to-pink-300">
+    <div class="container mx-auto text-center" data-aos="fade-up">
+      <h2 class="text-4xl font-bold text-white mb-8 animate__animated animate__fadeInUp">¡Diseño Web Exclusivo!</h2>
+      <p class="text-lg text-white leading-loose mb-6 animate__animated animate__fadeInUp animate__delay-1s" >
+        Transformamos ideas en experiencias digitales impactantes. Desde sitios web elegantes hasta plataformas interactivas,
+        nuestro equipo creativo está listo para dar vida a tu visión en línea.
+      </p>
+      <p class="text-lg text-white leading-loose mb-8 animate__animated animate__fadeInUp animate__delay-2s">
+        Con atención al detalle y tecnologías de última generación, creamos páginas web que no solo se ven
+        impresionantes sino que también funcionan excepcionalmente bien.
+      </p>
+      <a href="https://wa.me/+573013420041" class="btn btn-danger animate__animated animate__fadeInUp animate__delay-3s" target="_blank">¡Contáctanos Ahora!</a>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+   <!-- Sección de Servicios -->
+ <section id="servicios" class="container">
+    <div class="row">
+
+        <!-- Envíos Locales y Nacionales -->
+        <div class="col-md-6 servicio-item">
+            <i class="fas fa-shipping-fast servicio-icon"></i>
+            <h4 class="servicio-titulo">Envíos Locales y Nacionales</h4>
+            <p class="servicio-descripcion">Enviamos tus productos a todo Bogotá y a todo el país, con la más alta confianza, responsabilidad y cumplimiento.</p>
+        </div>
+
+        <!-- La Mejor Calidad -->
+        <div class="col-md-6 servicio-item">
+            <i class="fas fa-certificate servicio-icon"></i>
+            <h4 class="servicio-titulo">La Mejor Calidad</h4>
+            <p class="servicio-descripcion">Ofrecemos la mejor calidad en confección y textiles, así como los mejores proveedores en artículos promocionales y publicitarios.</p>
+        </div>
+
+        <!-- Las Mejores Ofertas -->
+        <div class="col-md-6 servicio-item">
+            <i class="fas fa-tags servicio-icon"></i>
+            <h4 class="servicio-titulo">Las Mejores Ofertas</h4>
+            <p class="servicio-descripcion">Tenemos las mejores ofertas y promociones con los mejores precios en el mercado.</p>
+        </div>
+
+        <!-- Cumplimiento y Seguridad -->
+        <div class="col-md-6 servicio-item">
+            <i class="fas fa-check-circle servicio-icon"></i>
+            <h4 class="servicio-titulo">Cumplimiento y Seguridad</h4>
+            <p class="servicio-descripcion">La mayor calidad con el mejor cumplimiento y profesionalismo.</p>
+        </div>
+
+    </div>
+</section>
+    <hr>
+    <br>
+    <section id="nosotros">
+        <div class="py-16 bg-gradient-to-b from-yellow-400 to-pink-500" data-aos="fade-up">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-white mb-8">Nuestros Creativos</h2>
+        
+                <div class="flex flex-wrap justify-center gap-8">
+                    <!-- Perfil del primer diseñador -->
+                    <div class="flex-shrink-0 w-48">
+                        <img src="img/clientes-artisitas/foto.jpg" alt="Diseñador 1" class="rounded-full h-48 w-45 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold text-white">jertdall</h3>
+                        <p class="text-gray-200">Descripción del Diseñador 1. Puedes agregar más información aquí.</p>
+                    </div>
+        
+                    <!-- Perfil del segundo diseñador -->
+                    <div class="flex-shrink-0 w-48">
+                        <img src="img/clientes-artisitas/foto.jpg" alt="Diseñador 2" class="rounded-full h-48 w-45 mx-auto mb-4">
+                        <h3 class="text-xl font-semibold text-white">esposa de jertdall</h3>
+                        <p class="text-gray-200">Descripción del Diseñador 2. Puedes agregar más información aquí.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div>
+     <section>
+
+        <div>
+            <!-- Sección de Misión -->
+            <section class="py-16 bg-gradient-to-r from-yellow-300 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300">
+                <div class="container mx-auto text-center text-white" data-aos="fade-up">
+                    <h2 class="text-5xl font-extrabold mb-8 animate__animated animate__fadeIn animate__delay-1s">Nuestra Misión</h2>
+                    <p class="text-lg leading-relaxed animate__animated animate__fadeIn animate__delay-2s">
+                        Enfrentamos cada día con el compromiso de [insertar la misión de tu empresa]. Con creatividad y dedicación, trabajamos para [describir cómo contribuyes a tus clientes, comunidad o industria].
+                    </p>
+                </div>
+            </section>
+        
+            <!-- Sección de Visión -->
+            <section class="py-16 bg-gradient-to-r from-yellow-500 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 transition-all duration-300">
+                <div class="container mx-auto text-center text-white" data-aos="fade-up">
+                    <h2 class="text-5xl font-extrabold mb-8 animate__animated animate__fadeIn animate__delay-1s">Nuestra Visión</h2>
+                    <p class="text-lg leading-relaxed animate__animated animate__fadeIn animate__delay-2s">
+                        Nos inspiramos en [insertar la visión de tu empresa]. Trabajamos hacia un futuro donde [describir la imagen futura que quieres lograr], esforzándonos por ser [menciona metas o logros importantes].
+                    </p>
+                </div>
+            </section>
+        </div>
+        
+
+     </section>
+
+        <div>
+    <br>
+    <hr>
+    <br>    
+    <section>
+        <section id="testimonials" class="py-10 bg-gradient-to-r from-yellow-300 via-red-500 to-orange-400">
+            <div class="container mx-auto">
+              <h2 class="text-3xl font-bold text-center text-white mb-6">Testimonios de Clientes</h2>
+          
+              <div class="flex flex-wrap justify-center">
+                <!-- Testimonio 1 -->
+                <div class="max-w-sm mx-4 my-4 bg-white p-6 rounded-md shadow-md">
+                  <div class="flex items-center mb-4">
+                    <img src="img/clientes-artisitas/foto.jpg" alt="Cliente 1" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                      <h3 class="text-lg font-semibold text-gray-800">Nombre del Cliente 1</h3>
+                      <p class="text-gray-600">Ubicación del Cliente</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700">"¡Increíble experiencia con sus servicios! Realmente superaron mis expectativas."</p>
+                </div>
+          
+                <!-- Testimonio 2 -->
+                <div class="max-w-sm mx-4 my-4 bg-white p-6 rounded-md shadow-md">
+                  <div class="flex items-center mb-4">
+                    <img src="img/clientes-artisitas/foto.jpg" alt="Cliente 2" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                      <h3 class="text-lg font-semibold text-gray-800">Nombre del Cliente 2</h3>
+                      <p class="text-gray-600">Ubicación del Cliente</p>
+                    </div>
+                  </div>
+                  <p class="text-gray-700">"Excelente servicio al cliente y productos de alta calidad. ¡Muy recomendado!"</p>
+                </div>
+          
+                <!-- Agrega más testimonios según sea necesario -->
+          
+              </div>
+            </div>
+          </section>
+          
+          </section>
+          
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="flex flex-wrap items-center">
+        <!-- Mapa a la derecha -->
+        <div id="map-container" class="w-full lg:w-1/2 h-96 lg:h-auto">
+            <!-- Reemplaza la siguiente URL del iframe con la de tu ubicación -->
+            <iframe class="w-full h-full rounded-lg" frameborder="0" style="border:0" allowfullscreen
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15907.117552008112!2d-74.1965228!3d4.6334068!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9de0c2f9d207%3A0x2ab4e2124d02c379!2sJertdall!5e0!3m2!1ses-419!2sco!4v1702965869927!5m2!1ses-419!2sco"></iframe>
+        </div>
+        
+        <!-- Descripción a la izquierda -->
+        <div id="visit-info" class="w-full lg:w-1/2 lg:pl-8 mt-8 lg:mt-0">
+            <h2 class="text-4xl font-bold text-dark-blue mb-4">Visítanos</h2>
+            <p class="text-gray-700">
+                Bienvenido a nuestro lugar especial. Estamos comprometidos a ofrecerte una experiencia única llena de
+                maravillas y momentos inolvidables. Descubre la belleza que nos rodea y sumérgete en la cultura
+                y la hospitalidad que ofrecemos. ¡Esperamos tu visita pronto!
+            </p>
+            <hr class="my-4 border-gray-300">
+            <p class="text-gray-700">
+                Nuestra ubicación es fácilmente accesible y te invitamos a explorar el entorno. ¡No dudes en contactarnos para
+                más detalles!
+            </p>
+        </div>
+    </section> 
+      
+  </main>
+ 
+  <!-- Botón flotante para ir al inicio -->
+  <div class="floating-button" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+ 
+     <!-- Botón flotante de WhatsApp -->
+     <div class="whatsapp-button hidden" onmouseover="showTooltip()" onmouseout="hideTooltip()">
+        <a href="https://wa.me/+573112438778" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <!-- Mensaje emergente al pasar el ratón -->
+        <div class="whatsapp-tooltip" id="whatsappTooltip">
+            Chatea con uno de nuestros expertos
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <footer class="bg-gradient-to-t from-yellow-400 to-yellow-600 p-8 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <p class="text-lg font-semibold">© 2023 JertDall. Todos los derechos reservados.</p>
+                <p class="text-sm">Design by Miiguelk</p>
+            </div>
+            <div class="flex space-x-4">
+                <a href="#inicio" class="hover:text-red-300">Inicio</a>
+                <a href="#productos" class="hover:text-red-300">Servicios</a>
+                <a href="#web-design" class="hover:text-gray-300">Contáctanos</a>
+            </div>
+        </div>
+    </footer>
+    
+      
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 1000,
+                offset: 200,
+                once: true,
+                mirror: false,
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+
+</body>
+</html>
+

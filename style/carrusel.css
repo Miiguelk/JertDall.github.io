@@ -1,0 +1,83 @@
+#slider {
+    padding: 50px 0;
+    background-color: #ffffff; /* Azul suave */
+    color: #ffffff;
+    background-image: url('../img/Slider/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+}
+
+.slide-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    overflow: hidden;
+    position: relative;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.slide-img {
+    flex: 0 0 45%; /* 45% de ancho para la imagen */
+    max-width: 45%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.slide-content {
+    flex: 0 0 50%; /* 50% de ancho para el contenido */
+    max-width: 50%;
+    padding: 40px;
+    background-color: #e74c3c; /* Rojo alizarina */
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    right: -100%; /* Ocultar inicialmente */
+    transition: right 0.5s ease-in-out;
+    font-family: 'roboto', cursive; /* Aplicar la fuente Pacifico */
+}
+
+.slide-content h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffffff; /* Color del título */
+    transition: color 0.3s ease-in-out;
+}
+
+.slide-content p {  
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #ecf0f1; /* Color del texto */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Estilo para cambiar el tamaño de la imagen al pasar el mouse */
+.slide-container:hover {
+    background-color: #0a8e6a; /* Verde esmeralda */
+}
+
+.slide-container:hover .slide-img {
+    transform: translateX(-20px);
+}
+
+.slide-container:hover .slide-content {
+    right: 0;
+}
+
+.slide-container:hover .slide-content h3,
+.slide-container:hover .slide-content p {
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+}
+#titulo-carrusel{
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+}
